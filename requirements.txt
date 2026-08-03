@@ -1,0 +1,21 @@
+# Environment for notebooks/Zubair_Generative_Modelling_Case_Study.ipynb
+#
+# The recorded run used a Colab GPU runtime with torch 2.11.0+cu128. Install
+# torch from the PyTorch index that matches the target CUDA build rather than
+# from these constraints; on Colab torch and torchvision are already present and
+# the notebook installs only the extras it needs.
+#
+# The notebook writes the resolved version of every package below into
+# Outputs/metrics/run_manifest.json at run time, so the exact environment of a
+# given run is recorded by the run itself and does not have to be asserted here.
+
+torch>=2.1
+torchvision>=0.16
+torchmetrics[image]>=1.4
+torch-fidelity>=0.3.0
+medmnist>=3.0.0
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
